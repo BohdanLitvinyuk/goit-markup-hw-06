@@ -437,9 +437,9 @@
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
-            <label class="label-name" for="user-name">Name</label>
+            <label class="label-name" for="user-email">Email</label>
             <div class="modal-form">
-              <input class="modal-input" type="text" name="name" id="user-name" />
+              <input class="modal-input" type="text" name="Email" id="user-email" />
               <svg class="icon-input" width="18px" height="24px">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
@@ -450,6 +450,24 @@
               name="Comment"
               id="comment-place"
               placeholder="Text input"></textarea>
+            <div class="checkbox-form">
+              <input
+                class="checkbox-input"
+                id="privacy policy"
+                type="checkbox"
+                name="privacy policy"
+                required />
+              <span class="checkbox-icon">
+                <svg class="checkbox-image">
+                  <use href="./images/icons.svg#icon-checkbox" width="10px"></use>
+                </svg>
+              </span>
+              <label class="checkbox-label" for="privacy policy">
+                I accept the terms and conditions of the<a href="" class="checkbox-link"
+                  >Privacy Policy</a
+                >
+              </label>
+            </div>
 
             <button type="submit">Submit</button>
           </form>

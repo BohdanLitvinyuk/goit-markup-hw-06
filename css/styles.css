@@ -14,6 +14,7 @@
   --modal-bg-color: #fcfcfc;
   --icon-close-normal-color: #000000;
   --icon-close-active-color: #ffffff;
+  --checkbox-text: #757575;
 }
 body {
   background-color: var(--body-bg-color);
@@ -840,4 +841,41 @@ body {
   color: rgba(117, 117, 117, 0.5);
   padding-top: 8px;
   padding-left: 16px;
+}
+.checkbox-label {
+  position: relative;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  color: var(--checkbox-text);
+  padding-left: 24px;
+}
+.checkbox-link {
+  color: var(--brand-color);
+}
+.checkbox-input {
+  appearance: none;
+}
+.checkbox-form {
+  display: flex;
+  align-items: center;
+}
+.checkbox-icon {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 1.25px solid var(--second-background-color);
+  border-radius: 2px;
+}
+.checkbox-input:checked + .checkbox-icon > .checkbox-image {
+  width: 100%;
+  height: 100%;
+  background-color: var(--hover-color);
+  opacity: 1;
+  fill: var(--brand-color-white);
+}
+.checkbox-image {
+  padding-left: 3px;
 }
