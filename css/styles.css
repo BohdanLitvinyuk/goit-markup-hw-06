@@ -813,13 +813,18 @@ body {
 }
 .modal-input:hover,
 .modal-input:focus {
-  fill: var(--brand-color);
   border-color: var(--brand-color);
   outline: none;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input:hover + .icon-input,
 .modal-input:focus + .icon-input {
   fill: var(--brand-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .comment-form {
@@ -832,6 +837,13 @@ body {
   outline-style: none;
   padding: 0;
   margin-bottom: 16px;
+}
+.comment-form:hover,
+.comment-form:focus {
+  border-color: var(--brand-color);
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .comment-form::placeholder {
   font-style: normal;
@@ -894,4 +906,12 @@ body {
   height: 56px;
   margin-left: 95px;
   margin-right: 96px;
+}
+.modal-button:hover,
+.modal-button:focus {
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--hover-color);
+  cursor: pointer;
 }
