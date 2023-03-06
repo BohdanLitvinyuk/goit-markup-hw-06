@@ -763,12 +763,7 @@ body {
   background-color: var(--hover-color);
   fill: var(--icon-close-active-color);
 }
-/* .modal-container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 72px 24px 24px 24px;
-  border: 1px solid tomato;
-} */
+
 .modal-form {
   position: relative;
   display: flex;
@@ -881,7 +876,6 @@ body {
 }
 .checkbox-input:checked + .checkbox-icon {
   background-image: url(../images/checkbox.svg);
-  background-color: #31d0aa;
   background-size: contain;
 }
 
